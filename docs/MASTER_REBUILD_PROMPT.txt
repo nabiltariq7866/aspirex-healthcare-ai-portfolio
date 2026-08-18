@@ -1,0 +1,1998 @@
+You are a world-class Creative Director, Senior Product Designer, Motion Designer, Design Systems Architect, and Frontend Engineer.
+
+Your task is to COMPLETELY REBUILD the existing Healthcare AI Portfolio.
+
+IMPORTANT:
+
+The current portfolio is visually unacceptable.
+
+It is too simple.
+It feels like a basic corporate website.
+It lacks visual drama.
+It lacks personality.
+It lacks premium interaction.
+It does not create a “WOW” reaction.
+
+DO NOT simply polish the existing UI.
+
+RETHINK THE ENTIRE VISUAL EXPERIENCE.
+
+The new portfolio must immediately impress a company executive when opened on a large screen.
+
+The expected reaction should be:
+
+“Wow — this looks like a premium AI healthcare technology studio.”
+
+The final experience should feel closer to a custom-designed digital experience from an elite product/design agency than a normal SaaS landing page.
+
+======================================================================
+0. NON-NEGOTIABLE OBJECTIVE
+======================================================================
+
+UI/UX IS THE MOST IMPORTANT PART OF THIS PROJECT.
+
+The portfolio exists primarily to showcase our capability.
+
+Therefore:
+
+Visual quality > development speed.
+
+Interaction quality > number of sections.
+
+Presentation quality > generic convenience.
+
+Do not stop when the site is merely functional.
+
+Do not stop when it looks “clean.”
+
+Do not stop when it looks like a normal startup landing page.
+
+Continue refining until it looks visually exceptional.
+
+Every major viewport should feel art-directed.
+
+Every section should have intention.
+
+Every interaction should feel premium.
+
+The site must have:
+
+- visual depth
+- strong hierarchy
+- cinematic presentation
+- carefully controlled motion
+- premium typography
+- high-quality application mockups
+- elegant lighting
+- layered compositions
+- sophisticated micro-interactions
+- creative section transitions
+- excellent responsive behavior
+
+======================================================================
+1. START BY AUDITING THE CURRENT PROJECT
+======================================================================
+
+Before rebuilding:
+
+Inspect the complete repository.
+
+Understand:
+
+- framework
+- React structure
+- routes
+- components
+- current assets
+- portfolio data
+- project screenshots
+- existing animations
+- styles
+- installed dependencies
+- responsive setup
+- project URLs
+- reusable code
+
+Keep only architecture/data that is genuinely useful.
+
+DO NOT preserve the existing visual design merely because it already exists.
+
+You have permission to completely redesign:
+
+- hero
+- navbar
+- colors
+- typography
+- section composition
+- project cards
+- product detail pages
+- footer
+- transitions
+- visual hierarchy
+- layout system
+
+Preserve working project metadata and functionality where useful.
+
+======================================================================
+2. ABSOLUTELY DO NOT BUILD THIS
+======================================================================
+
+The following outcomes are unacceptable:
+
+NO generic SaaS landing page.
+
+NO plain white background from top to bottom.
+
+NO simple title + paragraph + card grid sections.
+
+NO boring list of technologies.
+
+NO 8 equal rectangular project cards.
+
+NO endless thin bordered white cards.
+
+NO Bootstrap-looking UI.
+
+NO generic Tailwind template appearance.
+
+NO “developer portfolio” feel.
+
+NO plain dashboard screenshots dropped into cards.
+
+NO simple 3-column icon features.
+
+NO random gradient blobs.
+
+NO huge meaningless gradient headings.
+
+NO excessive glassmorphism.
+
+NO excessive rounded pills.
+
+NO floating shapes with no meaning.
+
+NO stock photos.
+
+NO fake testimonials.
+
+NO fake client logos.
+
+NO fake production claims.
+
+NO tiny typography.
+
+NO weak gray text.
+
+NO sections that feel unfinished because they contain too much empty space.
+
+If a section looks ordinary, redesign it.
+
+======================================================================
+3. CREATIVE DIRECTION
+======================================================================
+
+The portfolio should combine:
+
+PREMIUM HEALTHCARE TECHNOLOGY
++
+AI PRODUCT STUDIO
++
+ENTERPRISE SOFTWARE
++
+CINEMATIC DIGITAL EXPERIENCE
+
+Overall mood:
+
+- sophisticated
+- premium
+- technological
+- intelligent
+- cinematic
+- executive
+- modern
+- bold
+- clean
+- controlled
+- memorable
+
+Not playful.
+
+Not childish.
+
+Not overly futuristic.
+
+Not cyberpunk.
+
+Not boring corporate.
+
+Think:
+
+luxury product presentation
++
+high-end product engineering studio
++
+enterprise AI systems.
+
+The site should feel custom designed.
+
+======================================================================
+4. DESIGN QUALITY REFERENCE
+======================================================================
+
+Use the QUALITY BAR of premium technology brands and digital studios such as:
+
+- Linear
+- Vercel
+- Stripe
+- Raycast
+- Apple product storytelling
+- high-end Awwwards technology sites
+- premium enterprise AI companies
+- elite digital product studios
+
+DO NOT copy any particular website.
+
+Study the principles:
+
+- extraordinary typography
+- disciplined spacing
+- dramatic product framing
+- high contrast
+- restrained color
+- sophisticated animation
+- polished interaction
+- editorial layouts
+- strong composition
+- product-led storytelling
+
+======================================================================
+5. NEW GLOBAL VISUAL SYSTEM
+======================================================================
+
+Create a completely new visual identity.
+
+PRIMARY DARK:
+#0C161C
+
+DEEP SLATE:
+#12232B
+
+MIDNIGHT TEAL:
+#153A40
+
+PRIMARY ACCENT:
+#37B5A6
+
+CYAN ACCENT:
+#55A9C8
+
+AI VIOLET:
+#7475D6
+
+WARM GOLD:
+#D6A34C
+
+SOFT CORAL:
+#D56B68
+
+LIGHT BACKGROUND:
+#F5F8F8
+
+SECONDARY LIGHT:
+#ECF2F2
+
+SURFACE:
+#FFFFFF
+
+PRIMARY TEXT:
+#14232A
+
+SECONDARY TEXT:
+#4F626B
+
+DARK SECTION TEXT:
+#F2F7F7
+
+DARK SECONDARY:
+#A9BBC0
+
+BORDER:
+#D7E1E3
+
+Do not use every color everywhere.
+
+Use one dominant visual system.
+
+Individual projects can introduce their own accents.
+
+======================================================================
+6. COLOR BEHAVIOR
+======================================================================
+
+The site should alternate intelligently between:
+
+dark cinematic sections
+
+and
+
+light editorial sections.
+
+Example:
+
+Navbar
+↓
+Dark immersive hero
+↓
+Light overview
+↓
+Dark / neutral featured portfolio
+↓
+Light project editorial grid
+↓
+Dark Responsible AI section
+↓
+Light capabilities
+↓
+Dark final CTA
+
+Do not make the entire website one continuous white canvas.
+
+Do not make the entire website dark either.
+
+Create rhythm.
+
+======================================================================
+7. TYPOGRAPHY — MAKE IT FEEL EXPENSIVE
+======================================================================
+
+Typography must be one of the strongest parts of the site.
+
+Use:
+
+Headings:
+Manrope / Geist / Plus Jakarta Sans / equivalent
+
+Body:
+Inter / Geist Sans / equivalent
+
+Do not use tiny UI text.
+
+Suggested desktop scale:
+
+Hero:
+72–88px
+
+Hero secondary:
+20–23px
+
+Major section headings:
+46–58px
+
+Project showcase titles:
+30–42px
+
+Card headings:
+19–24px
+
+Body:
+15–18px
+
+Labels:
+11–13px
+
+Use strong line-height.
+
+Use precise maximum text widths.
+
+Avoid paragraphs stretching across the screen.
+
+Use typography as part of the visual composition.
+
+======================================================================
+8. NAVIGATION — PREMIUM FLOATING EXPERIENCE
+======================================================================
+
+Create a premium sticky navigation.
+
+Desktop:
+
+Brand left.
+
+Links:
+Overview
+Projects
+Capabilities
+Process
+Responsible AI
+About
+
+CTA:
+Explore Projects
+
+The navbar should initially sit transparently over the hero.
+
+On scroll:
+
+- slightly reduce height
+- add subtle background blur
+- add fine border
+- add subtle shadow
+- maintain premium look
+
+Active sections should animate.
+
+Do not use basic underline navigation.
+
+Use a restrained animated indicator.
+
+CTA should have a polished hover effect.
+
+Mobile:
+
+Create a high-quality full-screen or large-panel navigation experience.
+
+Do not use a tiny generic dropdown.
+
+======================================================================
+9. HERO — THIS MUST CREATE THE FIRST WOW MOMENT
+======================================================================
+
+Completely redesign the hero.
+
+The hero is the most important section.
+
+It must take approximately:
+
+85–100vh desktop.
+
+Use a CINEMATIC DARK BACKGROUND.
+
+Possible background layers:
+
+- subtle radial lighting
+- dark healthcare data grid
+- faint connection lines
+- controlled ambient gradients
+- extremely subtle noise texture
+- moving light glow following pointer slightly
+
+Do not create random glowing circles.
+
+Everything should feel deliberate.
+
+--------------------------------------------------
+LEFT SIDE
+--------------------------------------------------
+
+Small premium eyebrow:
+
+HEALTHCARE AI PRODUCT PORTFOLIO
+
+Large headline:
+
+“AI Systems Designed Around
+Real Healthcare Workflows.”
+
+Do not render this as a generic 2-line landing-page heading.
+
+Use typography composition.
+
+One phrase can use an accent treatment.
+
+Supporting paragraph:
+
+“A suite of interactive healthcare AI platforms exploring patient safety, virtual care, population health, interoperability, clinical intelligence and responsible AI governance.”
+
+Below:
+
+Primary:
+Explore the Portfolio
+
+Secondary:
+View Our Capabilities
+
+Then a refined proof/status row:
+
+08 AI Platforms
+Synthetic Data
+Human-in-the-Loop
+Enterprise Workflows
+
+--------------------------------------------------
+RIGHT SIDE — MOST IMPORTANT HERO VISUAL
+--------------------------------------------------
+
+DO NOT place one simple browser screenshot.
+
+Build an impressive LAYERED PRODUCT ECOSYSTEM.
+
+Create 3–4 overlapping application windows.
+
+Example:
+
+Foreground:
+HealthConnect dashboard
+
+Behind left:
+VirtualWard monitoring screen
+
+Behind right:
+MedSafe safety screen
+
+Background:
+HealthGuard governance panel
+
+Windows should:
+
+- use actual product screenshots when available
+- have realistic application framing
+- have different rotations of 0.5–2 degrees maximum
+- have depth
+- have premium shadows
+- have subtle glow based on project accent
+- move extremely slightly with cursor/parallax
+- animate into place during page load
+
+Add small floating labels:
+
+Patient Safety
+Virtual Monitoring
+Interoperability
+AI Governance
+
+Do NOT make these cheesy floating bubbles.
+
+Use refined product annotations.
+
+Hero visual should make users immediately understand:
+
+“There are multiple real applications in this portfolio.”
+
+======================================================================
+10. HERO INTERACTION
+======================================================================
+
+Implement controlled motion.
+
+On page load:
+
+headline stagger
+copy fade
+CTA entrance
+product windows stagger in
+
+On pointer movement:
+
+very subtle parallax:
+
+foreground product:
+4–8px
+
+background product:
+2–5px
+
+No dramatic movement.
+
+On scroll:
+
+product composition slightly reduces opacity / shifts as next section enters.
+
+Respect prefers-reduced-motion.
+
+======================================================================
+11. INTRO TRANSITION
+======================================================================
+
+The transition from hero to content should feel intentionally designed.
+
+Possible treatment:
+
+dark hero curves/steps into light section
+
+or
+
+floating metric panel overlaps hero edge
+
+or
+
+portfolio metrics appear partially over hero/light boundary.
+
+Do not abruptly change background with no transition.
+
+======================================================================
+12. PREMIUM PORTFOLIO METRICS
+======================================================================
+
+Create a floating overview panel.
+
+Not generic KPI cards.
+
+Use one connected horizontal composition.
+
+Example:
+
+08
+Interactive AI Systems
+
+06
+Healthcare Domains
+
+100%
+Synthetic Demo Data
+
+Human
+Review Built In
+
+Use thin separators.
+
+Large expressive numbers.
+
+Small but readable labels.
+
+Subtle reveal animation.
+
+======================================================================
+13. FEATURED PRODUCT STORY — BEFORE THE GRID
+======================================================================
+
+Before showing all 8 products, create a cinematic featured project section.
+
+Example project:
+HealthConnect AI
+
+Layout:
+
+large screenshot on left or center
+copy on opposite side
+
+Use large editorial typography.
+
+Show:
+
+07 / 08
+
+HEALTHCONNECT AI
+
+Healthcare Interoperability &
+Unified Patient 360
+
+Short explanation.
+
+3 capability indicators.
+
+Buttons:
+
+Explore Product
+Launch Demo ↗
+
+Animate screenshot slightly as it enters viewport.
+
+This featured section should be nearly full viewport width.
+
+It should feel like a PRODUCT LAUNCH section.
+
+======================================================================
+14. PROJECT PORTFOLIO — DO NOT BUILD A NORMAL GRID
+======================================================================
+
+The 8 products must be shown using an EDITORIAL BENTO / MAGAZINE layout.
+
+Example desktop composition:
+
+ROW 1
+
+CareOps AI
+large 60%
+
+Clinician Copilot AI
+40%
+
+ROW 2
+
+SmartReferral AI
+40%
+
+MedSafe AI
+60%
+
+ROW 3
+
+VirtualWard AI
+full-width cinematic feature
+
+ROW 4
+
+HealthPopulation AI
+50%
+
+HealthConnect AI
+50%
+
+ROW 5
+
+HealthGuard AI
+large horizontal feature
+
+Do not make all cards the same dimensions.
+
+Create visual rhythm.
+
+======================================================================
+15. PROJECT CARD DESIGN
+======================================================================
+
+Each project showcase should contain:
+
+project number
+
+category
+
+title
+
+subtitle
+
+short narrative
+
+capabilities
+
+product screenshot
+
+theme accent
+
+Explore Product
+
+Launch Live Demo
+
+The screenshot should occupy approximately 50–70% of the visual card.
+
+Text is supporting information.
+
+Do not make text dominate.
+
+Product screenshot must look excellent.
+
+--------------------------------------------------
+PROJECT VISUAL FRAME
+--------------------------------------------------
+
+Create a reusable premium BrowserFrame component.
+
+Frame includes:
+
+subtle browser top bar
+3 understated window controls
+project name
+optional URL/status indicator
+
+Use:
+
+1px border
+multiple shadow layers
+subtle project accent edge
+
+No giant fake browser chrome.
+
+--------------------------------------------------
+HOVER
+--------------------------------------------------
+
+When hovering card:
+
+card moves upward 3–5px
+screenshot scales 1.015–1.025
+border changes subtly
+light follows cursor slightly
+arrow shifts 3px
+background accent becomes slightly more visible
+
+No bouncing.
+
+======================================================================
+16. PROJECT-SPECIFIC THEMES
+======================================================================
+
+Use subtle project-specific accents.
+
+CareOps:
+navy / teal
+
+Clinician Copilot:
+sage / graphite / blue
+
+SmartReferral:
+indigo / cyan
+
+MedSafe:
+mulberry / coral
+
+VirtualWard:
+deep pine / mint
+
+HealthPopulation:
+aubergine / emerald / gold
+
+HealthConnect:
+carbon / aqua / cyan
+
+HealthGuard:
+obsidian / cobalt / copper
+
+Do not change the entire page palette.
+
+Project accent should appear in:
+
+browser glow
+tiny line
+badge
+project number
+visual gradient
+hover
+
+======================================================================
+17. PROJECT FILTERS
+======================================================================
+
+Filters:
+
+All
+Clinical Operations
+Patient Safety
+Virtual Care
+Population Health
+Interoperability
+AI Governance
+
+Do not use generic pill buttons.
+
+Create an elegant sliding segmented navigation.
+
+Active item should have animated indicator.
+
+Filtering should animate projects using layout animations.
+
+======================================================================
+18. PRODUCT DETAIL PAGE — PREMIUM CASE STUDY
+======================================================================
+
+Every project gets:
+
+/projects/[id]
+
+The detail page must NOT look like a documentation page.
+
+Use a premium case-study format.
+
+--------------------------------------------------
+DETAIL HERO
+--------------------------------------------------
+
+Large project title
+
+Project number
+
+Category
+
+One-sentence purpose
+
+Live Demo CTA
+
+Massive product screenshot below.
+
+Project accent environment.
+
+--------------------------------------------------
+PROBLEM / SOLUTION
+--------------------------------------------------
+
+Use large editorial numbers:
+
+01
+Problem
+
+02
+Product Approach
+
+Instead of tiny text cards.
+
+--------------------------------------------------
+CAPABILITIES
+--------------------------------------------------
+
+Show capability architecture visually.
+
+Not six generic feature boxes.
+
+Possible layout:
+
+large left title
+right capability rows
+numbered capability system
+
+--------------------------------------------------
+WORKFLOW
+--------------------------------------------------
+
+Create an animated horizontal/vertical workflow.
+
+Example:
+
+Signal
+→
+AI Analysis
+→
+Evidence
+→
+Human Review
+→
+Action
+
+--------------------------------------------------
+AI / RESPONSIBLE AI
+--------------------------------------------------
+
+Dark premium panel.
+
+Use source/evidence visualization.
+
+--------------------------------------------------
+ARCHITECTURE
+--------------------------------------------------
+
+Create a simplified diagram.
+
+Not just badges.
+
+Example:
+
+Healthcare Sources
+↓
+Data / Integration Layer
+↓
+AI Intelligence
+↓
+Operational Workflow
+↓
+Human Decision
+
+--------------------------------------------------
+NEXT PROJECT
+--------------------------------------------------
+
+Huge immersive next-project preview.
+
+Not simple Previous / Next text links.
+
+======================================================================
+19. ACTUAL SCREENSHOTS ARE ESSENTIAL
+======================================================================
+
+If screenshots of project dashboards exist in:
+
+public/
+assets/
+src/assets/
+
+USE THEM.
+
+Do NOT replace actual projects with generic CSS dashboards when real screenshots are available.
+
+If screenshots are not currently present:
+
+Create well-designed placeholders clearly marked so real screenshots can be added later.
+
+Centralize paths in:
+
+src/data/projects.ts
+
+Example:
+
+screenshots: {
+  hero: '/projects/medsafe/dashboard.webp',
+  secondary: [...]
+}
+
+Use lazy loading.
+
+======================================================================
+20. CAPABILITIES SECTION — REDESIGN COMPLETELY
+======================================================================
+
+Do not create simple rows like:
+
+Product Engineering | React | TypeScript
+
+That design is too basic.
+
+Instead create a rich capability constellation / matrix.
+
+Potential composition:
+
+Large center heading:
+
+“Built Across the Full AI Product Stack.”
+
+Around it, 5 capability clusters.
+
+01
+Healthcare Product Engineering
+
+02
+AI & Intelligence
+
+03
+Healthcare Data
+
+04
+Infrastructure
+
+05
+Responsible AI
+
+Each cluster should expand/reveal its technologies.
+
+Use subtle line connections.
+
+On hover:
+
+cluster activates
+associated technologies highlight
+
+Keep interactions refined.
+
+======================================================================
+21. INDUSTRY SOLUTION MAP
+======================================================================
+
+Create an impressive interactive healthcare ecosystem.
+
+Instead of a list:
+
+Clinical Care → Patient Safety → Virtual Care
+
+Build a horizontal visual system.
+
+Example:
+
+[ Clinical Workflows ]
+      |
+[ Patient Safety ]
+      |
+[ Virtual Care ]
+      |
+[ Population Health ]
+      |
+[ Health Data ]
+      |
+[ Security & Governance ]
+
+Projects appear as small indicators around each domain.
+
+Hovering a domain highlights relevant projects.
+
+Desktop:
+horizontal/diagonal map
+
+Mobile:
+vertical timeline
+
+======================================================================
+22. “HOW WE BUILD” — SCROLL STORYTELLING
+======================================================================
+
+Create a visually interesting process section.
+
+Left:
+sticky large heading.
+
+Right:
+scrolling numbered process.
+
+01
+Understand the Workflow
+
+02
+Unify Operational Data
+
+03
+Introduce AI Assistance
+
+04
+Keep Humans in Control
+
+05
+Measure & Improve
+
+As each process enters viewport:
+
+progress line fills
+number activates
+supporting visual changes
+
+Do not use five normal cards.
+
+======================================================================
+23. RESPONSIBLE AI — SECOND MAJOR WOW SECTION
+======================================================================
+
+Build a full-width dark cinematic section.
+
+Headline:
+
+“AI Assistance.
+Human Accountability.”
+
+Very large typography.
+
+Below show a visual AI decision pipeline.
+
+Example:
+
+INPUT
+
+Patient / Operational Data
+
+↓
+
+AI ASSISTANCE
+
+Risk signal
+Summary
+Recommendation
+
+↓
+
+EVIDENCE
+
+Source records
+Provenance
+Reasoning
+
+↓
+
+HUMAN DECISION
+
+Approve
+Modify
+Reject
+
+Use animated lines.
+
+Use subtle node motion.
+
+No fake AI brain graphics.
+
+Principles:
+
+AI suggests, humans decide.
+Evidence remains visible.
+Source provenance is preserved.
+Clinical decisions require review.
+Synthetic demo data only.
+Actions remain auditable.
+
+======================================================================
+24. TECHNOLOGY — DO NOT MAKE IT BORING
+======================================================================
+
+Do NOT use the previous plain table/list layout.
+
+Create an architecture presentation.
+
+Example full-width visual:
+
+DATA
+FHIR
+HL7
+DICOM
+REST
+
+↓
+
+APPLICATION
+React
+TypeScript
+Django
+FastAPI
+
+↓
+
+INTELLIGENCE
+LLMs
+RAG
+Predictive AI
+Agents
+
+↓
+
+INFRASTRUCTURE
+AWS
+Docker
+Kubernetes
+CI/CD
+
+Use lines and progressive reveal.
+
+Each layer can have subtle interactive highlighting.
+
+======================================================================
+25. ABOUT / STUDIO SECTION
+======================================================================
+
+Do not create just text on white background.
+
+Use a split premium layout.
+
+Left:
+large positioning statement.
+
+Example:
+
+“Building Intelligent Systems for Complex Healthcare Operations.”
+
+Right:
+
+AI Platforms
+Enterprise Systems
+Workflow Automation
+Healthcare Data
+AI Governance
+
+Use subtle animated counters/indicators if appropriate.
+
+======================================================================
+26. FINAL CTA — MEMORABLE ENDING
+======================================================================
+
+Full-width dark section.
+
+Large headline:
+
+“What Healthcare Workflow
+Should We Make Smarter Next?”
+
+Subtle animated product screen fragments in background.
+
+Supporting text.
+
+Primary CTA:
+
+Discuss a Project
+
+Secondary:
+
+Explore Portfolio
+
+Create subtle spotlight following pointer.
+
+No generic contact form unless requested.
+
+======================================================================
+27. FOOTER
+======================================================================
+
+Premium dark footer.
+
+Top border glow subtle.
+
+Columns:
+
+Healthcare AI Portfolio
+Projects
+Capabilities
+Contact
+
+Include:
+
+AspireX LLC
+
+Demo disclaimer.
+
+Use generous spacing.
+
+Do not make text tiny.
+
+======================================================================
+28. ANIMATION SYSTEM — IMPORTANT
+======================================================================
+
+Use Framer Motion.
+
+Create:
+
+src/motion/variants.ts
+
+Centralize motion.
+
+Animations should include:
+
+Hero:
+staggered entrance
+
+Product mockups:
+depth reveal
+
+Sections:
+scroll reveal
+
+Project grid:
+layout animations
+
+Project cards:
+hover lift
+
+Browser mockups:
+subtle parallax
+
+Process:
+progress animation
+
+Responsible AI:
+animated flow lines
+
+Navigation:
+animated active state
+
+Buttons:
+arrow movement
+
+Images:
+slow reveal masks where appropriate
+
+Lightbox:
+scale/fade
+
+Page routes:
+smooth transitions
+
+Do not animate every element independently.
+
+Motion should support storytelling.
+
+======================================================================
+29. POINTER / LIGHT INTERACTIONS
+======================================================================
+
+On desktop only:
+
+implement restrained pointer-responsive lighting.
+
+For premium cards:
+
+calculate pointer position.
+
+Use CSS variables:
+
+--mouse-x
+--mouse-y
+
+Create extremely subtle radial highlight.
+
+Maximum opacity:
+0.08–0.12.
+
+Do not make cards glow brightly.
+
+Disable this on touch devices.
+
+======================================================================
+30. SCROLL INTERACTION
+======================================================================
+
+Implement smooth but natural scrolling.
+
+Native smooth scroll or lightweight solution.
+
+Do not make scrolling feel delayed.
+
+Use sticky sections where they genuinely improve storytelling.
+
+Examples:
+
+How We Build
+Project showcase
+Architecture
+
+Do not make every section sticky.
+
+======================================================================
+31. MICRO-INTERACTIONS
+======================================================================
+
+Every important interactive element should feel polished.
+
+Buttons:
+
+hover lift 1px
+arrow moves
+background transition
+
+Project cards:
+
+image scale
+border response
+
+Navigation:
+
+active movement
+
+Filters:
+
+animated selection
+
+Links:
+
+subtle underline reveal
+
+Screenshots:
+
+zoom cursor / lightbox
+
+Do not make interactions cartoonish.
+
+======================================================================
+32. PROJECT LIGHTBOX
+======================================================================
+
+Clicking a project screenshot opens premium fullscreen preview.
+
+Dark backdrop.
+
+Image centered.
+
+Maximize viewport usage.
+
+Include:
+
+project name
+screen name
+close
+previous/next screenshot
+
+Keyboard:
+
+Escape close
+
+Arrow keys navigate.
+
+Use smooth animations.
+
+======================================================================
+33. RESPONSIVENESS
+======================================================================
+
+The final experience must look intentionally designed at:
+
+1600
+1440
+1366
+1280
+1024
+900
+768
+600
+430
+390
+375
+
+Do not simply stack desktop sections.
+
+Recompose.
+
+Desktop hero:
+2-column immersive.
+
+Tablet:
+visual moves beneath headline.
+
+Mobile:
+single premium product stack.
+
+Bento grid becomes full-width projects.
+
+No clipped mockups.
+
+No tiny project text.
+
+No horizontal page scrolling.
+
+No offscreen animations.
+
+======================================================================
+34. MOBILE HERO
+======================================================================
+
+Mobile deserves special attention.
+
+Hero should not become:
+
+headline
+paragraph
+button
+random screenshot.
+
+Create a purposeful composition.
+
+For example:
+
+headline
+
+CTA
+
+product-stack visual partially layered below
+
+metric indicators
+
+Smooth transition to portfolio.
+
+======================================================================
+35. ACCESSIBILITY
+======================================================================
+
+Maintain:
+
+semantic structure
+
+focus-visible states
+
+keyboard navigation
+
+ARIA labels
+
+mobile navigation focus management
+
+Escape-to-close
+
+minimum touch targets
+
+good contrast
+
+reduced-motion
+
+No accessibility regression for visual effects.
+
+======================================================================
+36. PERFORMANCE
+======================================================================
+
+Animations must remain smooth.
+
+Use transform/opacity.
+
+Avoid animating expensive layout properties.
+
+Lazy load product images.
+
+Optimize screenshots.
+
+Use WebP/AVIF where practical.
+
+Avoid enormous dependencies.
+
+Do not add Three.js just for decoration.
+
+======================================================================
+37. CENTRALIZED PROJECT CONFIG
+======================================================================
+
+Keep:
+
+src/data/projects.ts
+
+All 8 demos:
+
+CareOps AI
+Clinician Copilot AI
+SmartReferral AI
+MedSafe AI
+VirtualWard AI
+HealthPopulation AI
+HealthConnect AI
+HealthGuard AI
+
+Each:
+
+id
+number
+name
+subtitle
+category
+description
+theme
+accent
+capabilities
+technologies
+screenshots
+demoUrl
+featured
+
+Demo URLs remain easy to replace.
+
+DO NOT invent links.
+
+If empty:
+
+Demo link coming soon.
+
+======================================================================
+38. REQUIRED PROJECTS
+======================================================================
+
+01 CAREOPS AI
+
+Healthcare Operations & Patient Safety Platform
+
+02 CLINICIAN COPILOT AI
+
+Ambient Documentation & Clinical Workflow Assistant
+
+03 SMARTREFERRAL AI
+
+Referral, Waiting List & Intelligent Scheduling Platform
+
+04 MEDSAFE AI
+
+Medication Error, ADR & Patient Safety Intelligence
+
+05 VIRTUALWARD AI
+
+Hospital-at-Home & Remote Patient Monitoring
+
+06 HEALTHPOPULATION AI
+
+Population Health & Chronic Disease Intelligence
+
+07 HEALTHCONNECT AI
+
+Healthcare Interoperability & Unified Patient 360 Platform
+
+08 HEALTHGUARD AI
+
+Healthcare Cybersecurity & AI Governance Platform
+
+======================================================================
+39. VISUAL REFINEMENT PASSES — REQUIRED
+======================================================================
+
+DO NOT build once and stop.
+
+Perform THREE visual refinement passes.
+
+PASS 1 — COMPOSITION
+
+Review:
+
+section proportions
+layout
+visual hierarchy
+project image size
+whitespace
+
+PASS 2 — DETAIL
+
+Review:
+
+padding
+font sizes
+line heights
+radii
+shadows
+borders
+button sizes
+icon alignment
+
+PASS 3 — WOW FACTOR
+
+Ask:
+
+Does this feel custom?
+
+Is there a memorable first impression?
+
+Does every major section have a visual hook?
+
+Would a boss screenshot this website?
+
+Would a client believe this company can build premium software?
+
+If not:
+
+continue refining.
+
+======================================================================
+40. VISUAL QA
+======================================================================
+
+Inspect every page at 100% browser zoom.
+
+Test:
+
+1600×900
+1440×900
+1366×768
+1280×800
+1024×768
+768×1024
+430×932
+390×844
+375×812
+
+Look specifically for:
+
+bad whitespace
+tiny font
+text clipping
+cards touching
+weak hierarchy
+boring sections
+empty areas
+misaligned CTAs
+cropped screenshots
+weak contrast
+awkward mobile stacking
+broken animation
+horizontal overflow
+
+Fix every issue.
+
+======================================================================
+41. DO NOT ACCEPT THESE SECTION TYPES
+======================================================================
+
+If you find yourself building:
+
+heading
+paragraph
+three white cards
+
+STOP.
+
+Find a better visual composition.
+
+If you build:
+
+heading
+plain table
+technology chips
+
+STOP.
+
+Find a better presentation.
+
+If the portfolio becomes:
+
+white section
+white section
+white section
+
+STOP.
+
+Introduce visual rhythm.
+
+======================================================================
+42. REAL PRODUCT-FIRST DESIGN
+======================================================================
+
+The products themselves are the strongest portfolio asset.
+
+Therefore:
+
+SHOW THE PRODUCTS.
+
+Large.
+
+Frequently.
+
+Beautifully.
+
+Use screenshots as visual storytelling.
+
+Do not hide them behind text.
+
+A visitor should see multiple real application interfaces within the first viewport.
+
+======================================================================
+43. EXECUTIVE PRESENTATION MODE
+======================================================================
+
+Assume the portfolio will be displayed:
+
+on a 27-inch monitor
+during a leadership meeting
+through screen sharing
+in client calls
+
+Therefore:
+
+headings must be visible
+text must be readable
+screenshots must be large
+key projects must be obvious
+CTAs must be clear
+animation must look smooth
+
+Do not optimize only for a laptop close-up.
+
+======================================================================
+44. DESIGN DETAILS
+======================================================================
+
+Use:
+
+1px borders
+
+controlled corner radius:
+8–16px
+
+not 30px everywhere.
+
+Shadows:
+
+layered
+
+soft
+
+large-radius
+
+low-opacity.
+
+Example:
+
+0 1px 2px rgba(...)
+0 16px 50px rgba(...)
+
+Use subtle noise overlays in dark backgrounds if useful.
+
+Use hairline separators.
+
+Use intentional whitespace.
+
+======================================================================
+45. DEPTH
+======================================================================
+
+Create depth using:
+
+overlapping product windows
+
+subtle perspective
+
+shadows
+
+controlled blur
+
+foreground/background separation
+
+color lighting
+
+Do not create depth using dozens of floating blobs.
+
+======================================================================
+46. COMPONENT ARCHITECTURE
+======================================================================
+
+Create reusable components:
+
+PremiumNav
+HeroProductStack
+BrowserFrame
+ProjectShowcase
+ProjectCard
+ProjectFilters
+ProjectLightbox
+SectionHeading
+MetricRibbon
+CapabilityMatrix
+HealthcareMap
+ProcessStory
+ResponsibleAIFlow
+ArchitectureVisual
+AboutStudio
+FinalCTA
+Footer
+
+Motion:
+
+AnimatedSection
+RevealMask
+ParallaxMockup
+
+Keep code maintainable.
+
+======================================================================
+47. FINAL VALIDATION
+======================================================================
+
+Before delivery run:
+
+npm install
+npm run typecheck
+npm run build
+
+All must pass.
+
+Fix:
+
+TypeScript errors
+CSS issues
+broken routes
+broken imports
+console errors
+layout overflows
+
+Verify all 8 project routes.
+
+Verify missing demo URLs do not create broken links.
+
+Verify mobile menu.
+
+Verify filters.
+
+Verify lightbox.
+
+Verify reduced motion.
+
+======================================================================
+48. FINAL REPORT
+======================================================================
+
+Return:
+
+1. What was redesigned
+2. Main visual concept
+3. Components created
+4. Animations
+5. Responsive behavior
+6. Routes
+7. Demo URL configuration
+8. Screenshot configuration
+9. Typecheck result
+10. Production build result
+11. Any remaining asset placeholders
+
+======================================================================
+49. FINAL QUALITY TEST
+======================================================================
+
+The final result should NOT make someone say:
+
+“Nice website.”
+
+The target reaction is:
+
+“Wow — this looks extremely professional.”
+
+The first viewport should immediately communicate premium product engineering.
+
+Every project should feel worth exploring.
+
+The website must look visually richer and more thoughtfully designed than the previous implementation.
+
+If the final result still looks like a basic React/Tailwind portfolio:
+
+DO NOT FINISH.
+
+REDESIGN IT.
+
+======================================================================
+50. FINAL INSTRUCTION
+======================================================================
+
+Rebuild the complete portfolio now.
+
+Prioritize:
+
+1. WOW FACTOR
+2. UI QUALITY
+3. PRODUCT PRESENTATION
+4. MOTION
+5. READABILITY
+6. RESPONSIVENESS
+7. FUNCTIONALITY
+
+Do not protect the existing design.
+
+Do not make small cosmetic changes.
+
+Perform a genuine visual redesign.
+
+Make the portfolio feel custom-built, premium, memorable and executive-ready.
