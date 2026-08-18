@@ -8004,3 +8004,80 @@ select:focus-visible,
     height: 12px;
   }
 }
+
+/* =========================================================
+   DARK HEALTHCARE MAP — VISIBLE CONNECTOR LINE
+   Makes the line between the six domain nodes clearly visible
+   in dark mode while preserving the FANN gold/charcoal theme.
+   ========================================================= */
+
+.dark .healthcare-map-line {
+  z-index: 1;
+
+  height: 2px;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(197, 155, 72, .16) 0%,
+      rgba(197, 155, 72, .42) 14%,
+      rgba(214, 174, 90, .72) 50%,
+      rgba(197, 155, 72, .42) 86%,
+      rgba(197, 155, 72, .16) 100%
+    ) !important;
+
+  box-shadow:
+    0 0 8px rgba(197, 155, 72, .10);
+
+  opacity: 1;
+}
+
+/* Soft illuminated core so the connector stays readable
+   without becoming a bright solid bar. */
+.dark .healthcare-map-line::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(214, 174, 90, .18) 18%,
+      rgba(214, 174, 90, .45) 50%,
+      rgba(214, 174, 90, .18) 82%,
+      transparent 100%
+    ) !important;
+
+  filter: blur(.4px);
+
+  pointer-events: none;
+}
+
+/* Nodes remain above the connector. */
+.dark .healthcare-map-track button {
+  position: relative;
+  z-index: 2;
+}
+
+/* Give inactive nodes a little more definition against the line. */
+.dark .healthcare-map-track button i {
+  border-color: #121217;
+
+  background: #C59B48;
+
+  box-shadow:
+    0 0 0 1px rgba(214, 174, 90, .88),
+    0 0 10px rgba(197, 155, 72, .08);
+}
+
+/* Active node gets a slightly stronger ring. */
+.dark .healthcare-map-track button.active i {
+  background: #D6AE5A !important;
+
+  box-shadow:
+    0 0 0 2px #C59B48,
+    0 0 0 6px rgba(197, 155, 72, .10),
+    0 0 18px rgba(197, 155, 72, .20) !important;
+}
