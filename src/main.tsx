@@ -1,25 +1,31 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
-
 import App from './App'
+import { ThemeProvider, themeStorageKey, type ThemeMode } from './components/ThemeProvider'
 import './styles/global.css'
 
-/*
- * Prevent the browser from restoring the old scroll position when
- * React Router changes routes. Route-specific scroll behavior is
- * handled inside App.tsx.
- */
+function resolveInitialTheme(): ThemeMode {
+  const saved = window.localStorage.getItem(themeStorageKey)
+  if (saved === 'light' || saved === 'dark') return saved
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+}
+
+const initialTheme = resolveInitialTheme()
+document.documentElement.classList.toggle('dark', initialTheme === 'dark')
+document.documentElement.dataset.theme = initialTheme
+document.documentElement.style.colorScheme = initialTheme
+
 if ('scrollRestoration' in window.history) {
   window.history.scrollRestoration = 'manual'
 }
 
-ReactDOM.createRoot(
-  document.getElementById('root')!,
-).render(
+ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>,
 )

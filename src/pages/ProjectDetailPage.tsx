@@ -23,10 +23,8 @@ export default function ProjectDetailPage() {
   const { projectId } = useParams()
   const index = projects.findIndex((project) => project.id === projectId)
   const [lightbox, setLightbox] = useState<LightboxState>(null)
-  if (index < 0) return <Navigate to="/" replace />
-
-  const project = projects[index]
-  const next = projects[(index + 1) % projects.length]
+  const project = index >= 0 ? projects[index] : null
+  const next = index >= 0 ? projects[(index + 1) % projects.length] : null
 
   /*
    * ProjectDetailPage is reused when navigating from one project
@@ -75,6 +73,8 @@ export default function ProjectDetailPage() {
     if (!images.length) return
     setLightbox({ project: target, images, index: 0 })
   }, [])
+
+  if (!project || !next) return <Navigate to="/" replace />
 
   return (
     <div className="site-shell project-detail-shell" style={{ '--accent': project.accent, '--accent-2': project.accent2, '--dark': project.dark } as React.CSSProperties}>
