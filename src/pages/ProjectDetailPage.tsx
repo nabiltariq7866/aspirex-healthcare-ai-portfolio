@@ -99,23 +99,61 @@ export default function ProjectDetailPage() {
           <div className="detail-hero-meta"><span>SYNTHETIC DATA</span><span>HUMAN REVIEW</span><span>INTERACTIVE WORKFLOW</span></div>
         </section>
 
-        <section id="product-story" className="detail-editorial section">
-          <Reveal className="editorial-number">01</Reveal>
-          <Reveal className="editorial-heading"><span>THE PROBLEM</span><h2>The operational challenge.</h2></Reveal>
-          <Reveal className="editorial-copy"><p>{project.problem}</p></Reveal>
-          <Reveal className="editorial-number">02</Reveal>
-          <Reveal className="editorial-heading"><span>PRODUCT APPROACH</span><h2>How the platform responds.</h2></Reveal>
-          <Reveal className="editorial-copy"><p>{project.approach}</p></Reveal>
+        <section id="product-story" className="detail-value-story section">
+          <Reveal className="detail-value-intro">
+            <span>01 · PROBLEM → SOLUTION → IMPACT</span>
+            <h2>Why this product matters now.</h2>
+            <p>Three clear signals explain the operating challenge, the product response and the outcome it is designed to improve.</p>
+
+            <div className="detail-pinpoint-strip">
+              <article>
+                <small>PROBLEM</small>
+                <h3>{project.problemHeadline}</h3>
+              </article>
+
+              <article>
+                <small>SOLUTION</small>
+                <h3>{project.solutionHeadline}</h3>
+              </article>
+
+              <article>
+                <small>OUTCOME</small>
+                <h3>{project.outcomeHeadline}</h3>
+              </article>
+            </div>
+          </Reveal>
+
+          <div className="detail-value-grid">
+            <Reveal className="detail-value-card challenge">
+              <div className="detail-value-label"><span>01</span><b>INDUSTRY CHALLENGE</b></div>
+              <h3>Where the pressure is today.</h3>
+              <p>{project.industryChallenge}</p>
+            </Reveal>
+
+            <Reveal className="detail-value-card solution" delay={.05}>
+              <div className="detail-value-label"><span>02</span><b>WHAT WE BUILT</b></div>
+              <h3>How the platform responds.</h3>
+              <p>{project.solution}</p>
+            </Reveal>
+
+            <Reveal className="detail-value-card impact" delay={.1}>
+              <div className="detail-value-label"><span>03</span><b>PRACTICAL IMPACT</b></div>
+              <h3>What this is designed to improve.</h3>
+              <ul>
+                {project.impact.map((item) => <li key={item}><Check size={15} /> <span>{item}</span></li>)}
+              </ul>
+            </Reveal>
+          </div>
         </section>
 
         <section className="detail-capabilities-section section">
-          <Reveal className="detail-section-heading"><span>03 · CAPABILITY ARCHITECTURE</span><h2>A focused workflow system—not a collection of disconnected features.</h2></Reveal>
+          <Reveal className="detail-section-heading"><span>02 · CAPABILITY ARCHITECTURE</span><h2>A focused workflow system—not a collection of disconnected features.</h2></Reveal>
           <div className="detail-capability-list">{project.capabilities.map((capability, capabilityIndex) => <Reveal className="detail-capability-row" delay={capabilityIndex * .025} key={capability}><span>{String(capabilityIndex + 1).padStart(2, '0')}</span><b>{capability}</b><i /></Reveal>)}</div>
         </section>
 
         <section className="detail-workflow-section section-dark-soft">
           <div className="detail-workflow-inner">
-            <Reveal className="detail-workflow-copy"><span>04 · EXAMPLE WORKFLOW</span><h2>From signal to accountable action.</h2><p>The demonstration is designed as a connected product journey so every screen reflects the current synthetic workflow state.</p></Reveal>
+            <Reveal className="detail-workflow-copy"><span>03 · EXAMPLE WORKFLOW</span><h2>From signal to accountable action.</h2><p>The demonstration is designed as a connected product journey so every screen reflects the current synthetic workflow state.</p></Reveal>
             <div className="detail-workflow-track">{project.workflow.map((step, workflowIndex) => <Reveal className="detail-workflow-step" delay={workflowIndex * .045} key={step}><span>{String(workflowIndex + 1).padStart(2, '0')}</span><i /><b>{step}</b></Reveal>)}</div>
           </div>
         </section>
@@ -123,7 +161,7 @@ export default function ProjectDetailPage() {
         <section className="detail-ai-section">
           <div className="detail-ai-grid" aria-hidden="true" />
           <div className="detail-ai-inner">
-            <Reveal className="detail-ai-copy"><span><ShieldCheck size={15} /> RESPONSIBLE AI</span><h2>AI that supports the workflow without hiding the evidence.</h2><p>Assistance is framed as draft, prioritization, summarization or signal support—not autonomous clinical judgement.</p></Reveal>
+            <Reveal className="detail-ai-copy"><span><ShieldCheck size={15} /> 04 · RESPONSIBLE AI</span><h2>AI that supports the workflow without hiding the evidence.</h2><p>Assistance is framed as draft, prioritization, summarization or signal support—not autonomous clinical judgement.</p></Reveal>
             <div className="detail-ai-list">{project.aiCapabilities.map((item, aiIndex) => <Reveal className="detail-ai-item" delay={aiIndex * .045} key={item}><span>{String(aiIndex + 1).padStart(2, '0')}</span><Check size={15} /><b>{item}</b></Reveal>)}</div>
           </div>
         </section>

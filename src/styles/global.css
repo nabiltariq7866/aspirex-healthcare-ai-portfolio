@@ -7037,3 +7037,970 @@ select:focus-visible,
   --safe-accent: var(--fann-gold);
 }
 
+/* =========================================================
+   PROJECT VALUE STORY — PINPOINT PROBLEM / SOLUTION / IMPACT
+   Content-only enhancement. Preserves the final FANN palette.
+   ========================================================= */
+
+/* ---------- Portfolio project cards ---------- */
+
+.project-pinpoint {
+  max-width: 620px;
+
+  margin-top: 11px;
+
+  color: var(--fann-body, #6E6E73);
+
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.58;
+}
+
+.project-impact-preview {
+  margin-top: 15px;
+  padding-top: 13px;
+
+  border-top: 1px solid rgba(197, 155, 72, .20);
+}
+
+.project-impact-preview > small {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #9A7B3A;
+
+  font-size: 8.5px;
+  font-weight: 800;
+  letter-spacing: .13em;
+}
+
+.project-impact-preview > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 15px;
+}
+
+.project-impact-preview span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  color: #4F4F55;
+
+  font-size: 10.5px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.project-impact-preview span > i {
+  flex: 0 0 auto;
+
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+
+  background: #C59B48;
+
+  box-shadow: 0 0 0 3px rgba(197, 155, 72, .10);
+}
+
+.project-card .project-chips {
+  margin-top: 13px;
+}
+
+.dark .project-pinpoint {
+  color: #B9BBC6;
+}
+
+.dark .project-impact-preview {
+  border-top-color: rgba(197, 155, 72, .18);
+}
+
+.dark .project-impact-preview > small {
+  color: #D6AE5A;
+}
+
+.dark .project-impact-preview span {
+  color: #D7D7DB;
+}
+
+
+/* ---------- Project detail: problem → solution → impact ---------- */
+
+.detail-value-story {
+  position: relative;
+}
+
+.detail-value-intro {
+  max-width: 980px;
+
+  margin-bottom: 34px;
+}
+
+.detail-value-intro > span {
+  color: #9A7B3A;
+
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .14em;
+}
+
+.detail-value-intro h2 {
+  max-width: 980px;
+
+  margin: 10px 0 12px;
+
+  color: #1D1D1F;
+
+  font-size: clamp(34px, 3.4vw, 48px);
+  line-height: 1.08;
+  letter-spacing: -.04em;
+}
+
+.detail-value-intro p {
+  max-width: 760px;
+
+  color: #6E6E73;
+
+  font-size: 14px;
+  line-height: 1.72;
+}
+
+.detail-value-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 14px;
+}
+
+.detail-value-card {
+  position: relative;
+
+  min-height: 330px;
+
+  padding: 24px;
+
+  overflow: hidden;
+
+  border: 1px solid #E4DDD0;
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, .98),
+      rgba(250, 248, 244, .88)
+    );
+
+  box-shadow:
+    0 2px 4px rgba(29, 29, 31, .025),
+    0 16px 40px rgba(29, 29, 31, .055);
+}
+
+.detail-value-card::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  width: 3px;
+
+  background: #C59B48;
+}
+
+.detail-value-card.solution::before {
+  background: #D6AE5A;
+}
+
+.detail-value-card.impact::before {
+  background: #9A7B3A;
+}
+
+.detail-value-card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  right: -92px;
+  top: -105px;
+
+  border: 1px solid rgba(197, 155, 72, .12);
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+.detail-value-label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.detail-value-label span {
+  color: #A98237;
+
+  font-family: Manrope, Inter, sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.detail-value-label b {
+  color: #9A7B3A;
+
+  font-size: 8.5px;
+  font-weight: 800;
+  letter-spacing: .13em;
+}
+
+.detail-value-card h3 {
+  margin: 20px 0 12px;
+
+  color: #1D1D1F;
+
+  font-size: 21px;
+  line-height: 1.22;
+  letter-spacing: -.025em;
+}
+
+.detail-value-card > p {
+  color: #626267;
+
+  font-size: 13.5px;
+  line-height: 1.72;
+}
+
+.detail-value-card ul {
+  list-style: none;
+
+  margin: 15px 0 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 11px;
+}
+
+.detail-value-card li {
+  display: grid;
+  grid-template-columns: 25px 1fr;
+  align-items: start;
+  gap: 8px;
+
+  color: #4E4E53;
+
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.detail-value-card li svg {
+  width: 23px;
+  height: 23px;
+
+  padding: 5px;
+
+  border-radius: 50%;
+
+  background: rgba(197, 155, 72, .11);
+
+  color: #9A7B3A;
+}
+
+/* Dark mode */
+
+.dark .detail-value-intro h2 {
+  color: #F2F2F3;
+}
+
+.dark .detail-value-intro p {
+  color: #B9BBC6;
+}
+
+.dark .detail-value-intro > span {
+  color: #D6AE5A;
+}
+
+.dark .detail-value-card {
+  border-color: #2A2A3A;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(25, 25, 34, .98),
+      rgba(18, 18, 23, .95)
+    );
+
+  box-shadow:
+    0 18px 48px rgba(0, 0, 0, .18);
+}
+
+.dark .detail-value-card::after {
+  border-color: rgba(197, 155, 72, .11);
+}
+
+.dark .detail-value-label span,
+.dark .detail-value-label b {
+  color: #D6AE5A;
+}
+
+.dark .detail-value-card h3 {
+  color: #F2F2F3;
+}
+
+.dark .detail-value-card > p {
+  color: #B9BBC6;
+}
+
+.dark .detail-value-card li {
+  color: #E0E0E3;
+}
+
+.dark .detail-value-card li svg {
+  background: rgba(197, 155, 72, .12);
+
+  color: #D6AE5A;
+}
+
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 1100px) {
+  .detail-value-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .detail-value-card.impact {
+    grid-column: 1 / -1;
+
+    min-height: auto;
+  }
+
+  .detail-value-card.impact ul {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .project-pinpoint {
+    font-size: 12.5px;
+  }
+
+  .project-impact-preview {
+    margin-top: 13px;
+  }
+
+  .project-impact-preview > div {
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .detail-value-intro {
+    margin-bottom: 24px;
+  }
+
+  .detail-value-intro h2 {
+    font-size: 31px;
+  }
+
+  .detail-value-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-value-card,
+  .detail-value-card.impact {
+    grid-column: auto;
+
+    min-height: 0;
+
+    padding: 21px 19px;
+  }
+
+  .detail-value-card.impact ul {
+    display: flex;
+  }
+}
+
+/* =========================================================
+   PROJECT CARD SUBTITLE SPACING
+   Adds breathing space between project title and subtitle.
+   ========================================================= */
+
+.project-card h4,
+.bento-cinematic h4 {
+  margin-top: 12px !important;
+}
+
+/* =========================================================
+   PROJECT DETAIL HERO — SUBTITLE SPACING FIX
+   Correct target for:
+   "Ambient Documentation & Clinical Workflow Assistant"
+   ========================================================= */
+
+.project-detail-hero .detail-hero-copy h2,
+.detail-hero-copy h2 {
+  margin-top: 14px !important;
+  margin-bottom: 20px !important;
+}
+
+/* Keep spacing balanced on smaller screens too. */
+@media (max-width: 720px) {
+  .project-detail-hero .detail-hero-copy h2,
+  .detail-hero-copy h2 {
+    margin-top: 12px !important;
+    margin-bottom: 18px !important;
+  }
+}
+
+/* =========================================================
+   PROJECT DETAIL VALUE STORY — 3-POINT EDITORIAL INTRO
+   Replaces the oversized single sentence with three concise
+   Problem / Solution / Outcome headings.
+   ========================================================= */
+
+.detail-value-intro {
+  max-width: 1120px;
+}
+
+.detail-value-intro h2 {
+  max-width: 720px;
+
+  margin: 11px 0 10px;
+
+  font-size: clamp(30px, 3vw, 42px);
+  line-height: 1.08;
+  letter-spacing: -.035em;
+}
+
+.detail-value-intro > p {
+  max-width: 720px;
+
+  margin-bottom: 30px;
+}
+
+.detail-pinpoint-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 0;
+
+  overflow: hidden;
+
+  border: 1px solid #E4DDD0;
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, .72);
+
+  box-shadow:
+    0 14px 38px rgba(29, 29, 31, .045);
+}
+
+.detail-pinpoint-strip article {
+  position: relative;
+
+  min-height: 170px;
+
+  padding: 22px 23px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border-right: 1px solid #E4DDD0;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, .94),
+      rgba(250, 248, 244, .82)
+    );
+}
+
+.detail-pinpoint-strip article:last-child {
+  border-right: 0;
+}
+
+.detail-pinpoint-strip article::before {
+  content: "";
+
+  position: absolute;
+
+  left: 22px;
+  top: 0;
+
+  width: 44px;
+  height: 2px;
+
+  background: #C59B48;
+}
+
+.detail-pinpoint-strip article:nth-child(2)::before {
+  background: #D6AE5A;
+}
+
+.detail-pinpoint-strip article:nth-child(3)::before {
+  background: #9A7B3A;
+}
+
+.detail-pinpoint-strip small {
+  color: #9A7B3A;
+
+  font-size: 8.5px;
+  font-weight: 800;
+  letter-spacing: .14em;
+}
+
+.detail-pinpoint-strip h3 {
+  max-width: 320px;
+
+  margin: 24px 0 0;
+
+  color: #1D1D1F;
+
+  font-size: clamp(18px, 1.45vw, 23px);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -.025em;
+}
+
+/* Dark theme */
+.dark .detail-pinpoint-strip {
+  border-color: #2A2A3A;
+
+  background: rgba(18, 18, 23, .78);
+
+  box-shadow:
+    0 18px 48px rgba(0, 0, 0, .16);
+}
+
+.dark .detail-pinpoint-strip article {
+  border-right-color: #2A2A3A;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(25, 25, 34, .96),
+      rgba(18, 18, 23, .92)
+    );
+}
+
+.dark .detail-pinpoint-strip small {
+  color: #D6AE5A;
+}
+
+.dark .detail-pinpoint-strip h3 {
+  color: #F2F2F3;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .detail-pinpoint-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-pinpoint-strip article {
+    min-height: 0;
+
+    border-right: 0;
+    border-bottom: 1px solid #E4DDD0;
+  }
+
+  .detail-pinpoint-strip article:last-child {
+    border-bottom: 0;
+  }
+
+  .dark .detail-pinpoint-strip article {
+    border-bottom-color: #2A2A3A;
+  }
+
+  .detail-pinpoint-strip h3 {
+    max-width: none;
+
+    margin-top: 14px;
+  }
+}
+
+@media (max-width: 720px) {
+  .detail-value-intro h2 {
+    font-size: 29px;
+  }
+
+  .detail-value-intro > p {
+    margin-bottom: 22px;
+  }
+
+  .detail-pinpoint-strip article {
+    padding: 19px 18px;
+  }
+
+  .detail-pinpoint-strip article::before {
+    left: 18px;
+  }
+
+  .detail-pinpoint-strip h3 {
+    font-size: 18px;
+  }
+}
+
+/* =========================================================
+   PROJECT CARD CTA BUTTONS
+   Converts Explore product + Launch live demo from text links
+   into premium FANN-style buttons matching project detail CTAs.
+   ========================================================= */
+
+.project-card .project-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-top: 22px;
+}
+
+/* Shared button foundation */
+.project-card .project-links a {
+  min-height: 43px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 0 15px;
+
+  border-radius: 9px;
+
+  font-size: 11px;
+  font-weight: 750;
+  line-height: 1;
+
+  text-decoration: none;
+
+  transition:
+    transform .18s ease,
+    background .18s ease,
+    border-color .18s ease,
+    color .18s ease,
+    box-shadow .18s ease;
+}
+
+/* Explore product — elegant outlined/light CTA */
+.project-card .project-links a:first-of-type {
+  border: 1px solid rgba(197, 155, 72, .42);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, .98),
+      rgba(250, 248, 244, .92)
+    );
+
+  color: #5D4924 !important;
+
+  box-shadow:
+    0 5px 14px rgba(29, 29, 31, .035),
+    inset 0 1px 0 rgba(255, 255, 255, .85);
+}
+
+/* Launch live demo — stronger primary CTA */
+.project-card .project-links a:nth-of-type(2) {
+  border: 1px solid rgba(197, 155, 72, .55);
+
+  background:
+    linear-gradient(
+      174deg,
+      #C59B48 0%,
+      #D6AE5A 100%
+    );
+
+  color: #121217 !important;
+
+  box-shadow:
+    0 8px 20px rgba(197, 155, 72, .16),
+    inset 0 1px 0 rgba(255, 255, 255, .22);
+}
+
+/* Hover — both remain warm/gold, never blue */
+.project-card .project-links a:first-of-type:hover {
+  transform: translateY(-2px);
+
+  border-color: rgba(197, 155, 72, .68);
+
+  background:
+    linear-gradient(
+      145deg,
+      #FFFDF8,
+      #F7F0E4
+    );
+
+  color: #3F3118 !important;
+
+  box-shadow:
+    0 10px 24px rgba(197, 155, 72, .12);
+}
+
+.project-card .project-links a:nth-of-type(2):hover {
+  transform: translateY(-2px);
+
+  border-color: rgba(214, 174, 90, .72);
+
+  background:
+    linear-gradient(
+      174deg,
+      #D6AE5A 0%,
+      #C59B48 100%
+    );
+
+  color: #0B0B0D !important;
+
+  box-shadow:
+    0 12px 26px rgba(197, 155, 72, .24),
+    inset 0 1px 0 rgba(255, 255, 255, .26);
+}
+
+/* Arrow motion */
+.project-card .project-links a svg {
+  flex: 0 0 auto;
+
+  color: currentColor !important;
+
+  transition:
+    transform .18s ease,
+    color .18s ease;
+}
+
+.project-card .project-links a:hover svg {
+  transform: translateX(3px);
+}
+
+/* Keyboard focus */
+.project-card .project-links a:focus-visible {
+  outline: 3px solid rgba(197, 155, 72, .22);
+  outline-offset: 3px;
+}
+
+/* Demo pending keeps quiet visual hierarchy */
+.project-card .project-links .demo-pending {
+  min-height: 43px;
+
+  display: inline-flex;
+  align-items: center;
+
+  padding: 0 13px;
+
+  border: 1px dashed rgba(197, 155, 72, .30);
+  border-radius: 9px;
+
+  background: rgba(197, 155, 72, .045);
+
+  color: #8A7A5C;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+/* Cinematic cards must use the same button language,
+   overriding older white-link rules. */
+.bento-cinematic .project-links a:first-of-type,
+.project-card.bento-cinematic .project-links a:first-of-type {
+  border-color: rgba(197, 155, 72, .42);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, .98),
+      rgba(250, 248, 244, .92)
+    );
+
+  color: #5D4924 !important;
+}
+
+.bento-cinematic .project-links a:nth-of-type(2),
+.project-card.bento-cinematic .project-links a:nth-of-type(2) {
+  border-color: rgba(197, 155, 72, .55);
+
+  background:
+    linear-gradient(
+      174deg,
+      #C59B48 0%,
+      #D6AE5A 100%
+    );
+
+  color: #121217 !important;
+}
+
+/* Dark mode */
+.dark .project-card .project-links a:first-of-type {
+  border-color: rgba(197, 155, 72, .34);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(34, 34, 49, .96),
+      rgba(25, 25, 34, .96)
+    );
+
+  color: #E4C987 !important;
+
+  box-shadow:
+    0 7px 18px rgba(0, 0, 0, .16),
+    inset 0 1px 0 rgba(255, 255, 255, .035);
+}
+
+.dark .project-card .project-links a:first-of-type:hover {
+  border-color: rgba(214, 174, 90, .60);
+
+  background:
+    linear-gradient(
+      145deg,
+      #2A2928,
+      #222218
+    );
+
+  color: #F1D796 !important;
+
+  box-shadow:
+    0 10px 25px rgba(197, 155, 72, .10);
+}
+
+.dark .project-card .project-links a:nth-of-type(2) {
+  border-color: rgba(197, 155, 72, .55);
+
+  background:
+    linear-gradient(
+      174deg,
+      #C59B48 0%,
+      #D6AE5A 100%
+    );
+
+  color: #0B0B0D !important;
+}
+
+.dark .project-card .project-links a:nth-of-type(2):hover {
+  background:
+    linear-gradient(
+      174deg,
+      #D6AE5A 0%,
+      #C59B48 100%
+    );
+
+  color: #0B0B0D !important;
+}
+
+.dark .project-card .project-links .demo-pending {
+  border-color: rgba(197, 155, 72, .22);
+
+  background: rgba(197, 155, 72, .06);
+
+  color: #B9A97D;
+}
+
+
+/* Mobile */
+@media (max-width: 720px) {
+  .project-card .project-links {
+    width: 100%;
+
+    gap: 8px;
+  }
+
+  .project-card .project-links a {
+    min-height: 42px;
+
+    padding: 0 13px;
+  }
+}
+
+@media (max-width: 470px) {
+  .project-card .project-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project-card .project-links a {
+    width: 100%;
+  }
+
+  .project-card .project-links .demo-pending {
+    grid-column: 1 / -1;
+
+    justify-content: center;
+  }
+}
+
+/* =========================================================
+   MOBILE PROJECT CTA — SINGLE ROW
+   Keeps Explore product + Launch live demo on one line.
+   ========================================================= */
+
+@media (max-width: 470px) {
+  .project-card .project-links {
+    width: 100%;
+
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center;
+
+    gap: 7px;
+  }
+
+  .project-card .project-links a {
+    flex: 1 1 0;
+
+    width: auto !important;
+    min-width: 0;
+    min-height: 40px;
+
+    padding: 0 9px;
+
+    font-size: 9.5px;
+    line-height: 1;
+
+    white-space: nowrap !important;
+  }
+
+  .project-card .project-links a svg {
+    width: 13px;
+    height: 13px;
+
+    flex: 0 0 auto;
+  }
+
+  .project-card .project-links .demo-pending {
+    flex: 1 1 100%;
+
+    min-width: 0;
+
+    justify-content: center;
+  }
+}
+
+/* Very narrow phones */
+@media (max-width: 360px) {
+  .project-card .project-links {
+    gap: 5px;
+  }
+
+  .project-card .project-links a {
+    min-height: 38px;
+
+    padding: 0 7px;
+
+    font-size: 8.8px;
+  }
+
+  .project-card .project-links a svg {
+    width: 12px;
+    height: 12px;
+  }
+}
