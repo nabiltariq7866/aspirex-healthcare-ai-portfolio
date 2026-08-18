@@ -5318,3 +5318,361 @@ p { margin: 0; color: var(--muted); font-size: 16px; line-height: 1.72; }
     padding-top: 10px;
   }
 }
+
+/* =========================================================
+   MOBILE EXPANDED INTERFACE — RESPONSIVE VIEWER FIX
+   Keeps desktop lightbox unchanged and improves mobile/tablet.
+   ========================================================= */
+
+@media (max-width: 720px) {
+  /* Do not vertically center the modal on small screens.
+     Start it near the top so there is no huge empty backdrop area. */
+  .lightbox-backdrop {
+    align-items: start;
+    justify-items: center;
+
+    padding:
+      max(10px, env(safe-area-inset-top))
+      8px
+      max(10px, env(safe-area-inset-bottom));
+
+    overflow-y: auto;
+  }
+
+  .lightbox-shell {
+    width: min(100%, 680px);
+    max-width: 100%;
+
+    height: auto;
+    max-height: calc(
+      100dvh -
+      max(20px, env(safe-area-inset-top)) -
+      max(20px, env(safe-area-inset-bottom))
+    );
+
+    margin-top: 8px;
+
+    grid-template-rows: auto minmax(0, 1fr) auto;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+  }
+
+  /* Compact but readable header. */
+  .lightbox-head {
+    min-height: 64px;
+
+    padding: 10px 10px 10px 14px;
+
+    gap: 10px;
+  }
+
+  .lightbox-head div {
+    min-width: 0;
+  }
+
+  .lightbox-head span {
+    font-size: 8.5px;
+    line-height: 1.2;
+  }
+
+  .lightbox-head b {
+    max-width: calc(100vw - 92px);
+
+    margin-top: 3px;
+
+    overflow: hidden;
+
+    color: #18384E;
+
+    font-size: 15px;
+    line-height: 1.25;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .lightbox-head button {
+    flex: 0 0 auto;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 10px;
+  }
+
+  /* Let the screenshot use most of the mobile viewport. */
+  .lightbox-stage {
+    position: relative;
+
+    min-height: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 18px 12px;
+
+    overflow: hidden;
+  }
+
+  .lightbox-stage img {
+    width: 100%;
+    height: auto;
+
+    max-width: 100%;
+    max-height: calc(100dvh - 190px);
+
+    object-fit: contain;
+
+    border-radius: 7px;
+  }
+
+  /* Navigation buttons stay inside the modal and no longer get cut. */
+  .lightbox-nav {
+    top: 50%;
+
+    width: 40px;
+    height: 40px;
+
+    border-width: 1px;
+
+    background: rgba(255, 255, 255, .96);
+
+    box-shadow:
+      0 7px 20px rgba(35, 76, 105, .13);
+  }
+
+  .lightbox-nav.prev {
+    left: 8px;
+  }
+
+  .lightbox-nav.next {
+    right: 8px;
+  }
+
+  /* Stronger icon contrast on small screens. */
+  .lightbox-nav svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Compact bottom status area. */
+  .lightbox-foot {
+    min-height: 46px;
+
+    gap: 10px;
+
+    padding: 0 13px;
+
+    font-size: 8.5px;
+    line-height: 1.3;
+  }
+
+  .lightbox-foot span {
+    min-width: 0;
+  }
+
+  .lightbox-foot span:first-child {
+    white-space: nowrap;
+  }
+
+  .lightbox-foot span:last-child {
+    overflow: hidden;
+
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE — 375px / 390px / 430px OPTIMIZATION
+   ========================================================= */
+
+@media (max-width: 470px) {
+  .lightbox-backdrop {
+    padding:
+      max(6px, env(safe-area-inset-top))
+      4px
+      max(6px, env(safe-area-inset-bottom));
+  }
+
+  .lightbox-shell {
+    width: 100%;
+
+    max-height: calc(
+      100dvh -
+      max(12px, env(safe-area-inset-top)) -
+      max(12px, env(safe-area-inset-bottom))
+    );
+
+    margin-top: 4px;
+
+    border-radius: 12px;
+  }
+
+  .lightbox-head {
+    min-height: 60px;
+
+    padding: 8px 8px 8px 12px;
+  }
+
+  .lightbox-head span {
+    font-size: 8px;
+  }
+
+  .lightbox-head b {
+    max-width: calc(100vw - 86px);
+
+    font-size: 14px;
+  }
+
+  .lightbox-head button {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* On narrow phones keep some side room for arrows,
+     but let the screenshot remain substantially larger. */
+  .lightbox-stage {
+    padding: 16px 26px;
+  }
+
+  .lightbox-stage img {
+    max-height: calc(100dvh - 176px);
+  }
+
+  .lightbox-nav {
+    width: 38px;
+    height: 38px;
+  }
+
+  .lightbox-nav.prev {
+    left: 5px;
+  }
+
+  .lightbox-nav.next {
+    right: 5px;
+  }
+
+  .lightbox-foot {
+    min-height: 43px;
+
+    padding: 0 11px;
+
+    font-size: 8px;
+  }
+
+  /* On very narrow screens the right disclaimer can disappear
+     so the interface counter remains clean and readable. */
+  .lightbox-foot span:last-child {
+    display: none;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL / SHORT PHONE VIEWPORTS
+   ========================================================= */
+
+@media (max-width: 390px) {
+  .lightbox-stage {
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+
+  .lightbox-nav {
+    width: 36px;
+    height: 36px;
+  }
+
+  .lightbox-nav svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 720px) and (max-height: 680px) {
+  .lightbox-shell {
+    margin-top: 2px;
+  }
+
+  .lightbox-head {
+    min-height: 54px;
+  }
+
+  .lightbox-head button {
+    width: 36px;
+    height: 36px;
+  }
+
+  .lightbox-stage {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .lightbox-stage img {
+    max-height: calc(100dvh - 145px);
+  }
+
+  .lightbox-foot {
+    min-height: 38px;
+  }
+}
+
+/* =========================================================
+   MOBILE LIGHTBOX — PERFECT VIEWPORT CENTERING
+   Keeps the responsive modal fixes, but centers the whole
+   interface viewer horizontally and vertically.
+   ========================================================= */
+
+@media (max-width: 720px) {
+  .lightbox-backdrop {
+    display: grid;
+
+    align-items: center;
+    justify-items: center;
+    place-items: center;
+
+    padding:
+      max(10px, env(safe-area-inset-top))
+      8px
+      max(10px, env(safe-area-inset-bottom));
+
+    overflow-y: auto;
+  }
+
+  .lightbox-shell {
+    margin: 0 auto;
+
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 470px) {
+  .lightbox-backdrop {
+    align-items: center;
+    justify-items: center;
+    place-items: center;
+  }
+
+  .lightbox-shell {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 720px) and (max-height: 680px) {
+  .lightbox-backdrop {
+    align-items: center;
+    justify-items: center;
+    place-items: center;
+  }
+
+  .lightbox-shell {
+    margin: 0 auto;
+  }
+}
